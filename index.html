@@ -5,13 +5,16 @@
     <title></title>
     <style media="screen">
       #box{width: 100px;height:100px;background: red; position:absolute;top:0;left:0;}
+      #limitBox{width: 100px;height:100px;background: yellow; position:absolute;top:0;left:0;}
     </style>
     <script src="./index.js" charset="utf-8"></script>
+    <script src="./limitDrag.js" charset="utf-8"></script>
   </head>
   <body>
-    <div id="box"></div>
+    <div id="box"></div><div id="limitBox"></div>
   </body>
   <script type="text/javascript">
     new Drag("box")
+    new limitDrag("limitBox")
   </script>
 </html>
